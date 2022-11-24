@@ -44,15 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal\Animal.cs" />
+    <Compile Include="Animal\Biom.cs" />
     <Compile Include="aviary.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="option\BiomType.cs" />
     <Compile Include="Zebra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="option\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

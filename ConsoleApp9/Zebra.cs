@@ -9,12 +9,15 @@ namespace ConsoleApp9
     public class Zebra : AbstractAnimal
 
     {
-        public Zebra(string name, int age): base(name, age)
+        public Zebra(string Name, int Age, double FoodAmount) : base(Name, Age, FoodAmount)
         {
-            Name ="Martin";
-            age = 10;
-      
+            this.Age = Age;
+            this.FoodAmount = FoodAmount;
+            this.Name = Name;
         }
+        
+       
+      
         
     }
 }

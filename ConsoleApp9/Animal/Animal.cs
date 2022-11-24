@@ -1,4 +1,4 @@
-﻿using ConsoleApp9.option;
+﻿using ConsoleApp9;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,38 +10,31 @@ namespace ConsoleApp9
 {
     public abstract class AbstractAnimal
     {
-        public string Species;
-        public string Biome;
-        public int Area;
-        public string Meal;
-        public string Sort;
-        public string Sound;
-        public string Name;
-        public double FoodAmount;
-        public int age;
-        public BiomType biom;
-        public double area;
-        public AbstractAnimal(string name, int Age)
-        {
-            Name = name;
-            age = Age;
+       
+
+     
+        public string Meal { get; set; }
+        public string Sort { get; set; }
+        public  string Sound { get; set; }
+        public  string Name { get; set; }
+        public  double FoodAmount { get; set; }
+        public int Age { get; set; }
+        public  double Area { get; set; }
+        public AbstractAnimal(string Name, int Age,double FoodAmount)
+        { 
+            this.Name = Name;
+            this.Age = Age;
+            this.FoodAmount = FoodAmount;   
         }
 
-        public void Eat()
-        {
-            Console.WriteLine("nyam nyam");
-        }
+        public abstract void Eat();
 
-        public void MakeSound()
-        {
-            Console.WriteLine("auuu!");
-        }
 
-        public void Play()
-        {
-            Console.WriteLine("I'm running");
-        }
+        public abstract void MakeSound();
+
+
+        public abstract void Play();
+       
         
     }
-    
 }
